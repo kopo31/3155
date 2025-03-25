@@ -1,0 +1,20 @@
+#1
+PT = 3.14
+a=5.5
+b=5.5
+print(a*b*PT)
+
+
+#2
+A = 10*4*(1/2)
+B = 9*5*(1/2)
+print(A == B)
+
+
+#3
+kor=95
+mat=88
+eng=90
+ave=92
+total = ave*4-kor-mat-eng
+print(total)
