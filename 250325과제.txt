@@ -5,7 +5,7 @@ while i <= 9:
 
  while j <= 9:
   if(j % 2) == 1:
-   print('홀수x홀수입니다 =',str(i) + ' X ' + str(j) + ' = ' + str(i*j))         
+   print('홀수x홀수입니다 =',str(i) + ' X ' + str(j) + ' = ' + str(i * j))         
   j += 1
  i += 1  
 
@@ -15,6 +15,6 @@ while i <= 9:
    j = 1
    while j <= 9:
     if(j % 2) == 0:
-     print('짝수x짝수입니다 =',str(i) + ' X ' + str(j) + ' = ' + str(i*j)) 
+     print('짝수x짝수입니다 =',str(i) + ' X ' + str(j) + ' = ' + str(i * j)) 
     j += 1
   i += 1  
