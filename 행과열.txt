@@ -5,10 +5,8 @@ if(m > 0 and n > 0) and (m%1==0 and n%1==0) :
  for i in range(int(m)):
     StartNum = i + 1
     EndNum = StartNum + n - 1
-
     for num in range(int(StartNum), int(EndNum) + 1):
         print(num, end='')
-
     print()
 else:
   print("음수,소수점 나가")
