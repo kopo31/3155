@@ -1,7 +1,12 @@
 def check_prime_num(x):
+  x = int(x)
   for i in range(2, x):
-    if x % i == 0:
-      return False
-  return True 
-number = int(input('판별할 자연수를 입력하세요'))
-print(check_prime_num(number))
+    if x % i == 0 :
+         return False
+    return True
+
+number = float(input('판별할 자연수를 입력하세요:'))
+if number == 1 or number % 1 != 0 or number <= 0:
+  print('잘못된 수')
+else:
+  print(check_prime_num(number))
