@@ -1,3 +1,6 @@
+from google.colab import files
+f = files.upload( ) 
+
 import numpy as np
 data = np.loadtxt('chocolate_rating.csv', delimiter = ',')
 print('차원:', data.ndim)
