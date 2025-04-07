@@ -5,23 +5,17 @@ int main()
     int a = 0;
     int b = 0;
     int c = 0;
-    int result = 0;
-    
+    int result = 0;    
     scanf("%d", &a);
     scanf("%d", &b);
-    scanf("%d", &c);
-    
+    scanf("%d", &c);    
     if(c == 0) {
         printf("c는 0이라 불가능요.\n");
     }
-    else;
-    
-    result = (a + b) * c - (a - b) / c;
-    
-    printf("연산 결과 : (%d + %d) * %d - (%d - %d) / %d = %d", a, b, c, a, b, c, result);
-    
+    else;   
+    result = (a + b) * c - (a - b) / c;    
+    printf("연산 결과 : (%d + %d) * %d - (%d - %d) / %d = %d", a, b, c, a, b, c, result);    
     return 0;
-
 } 
 
 
@@ -40,13 +34,9 @@ int main()
     scanf("%d", &a);
     
     b = a / 100;
-    c = a%100 / 10;
-    d = a%10 % 10;
-    
-    result = b + c + d;
-    
-    printf("자리 수의 합 : %d", result);
-    
+    c = a % 100 / 10;
+    d = a % 10 % 10;    
+    result = b + c + d;  
+    printf("자리 수의 합 : %d", result);    
     return 0;
-
 } 
