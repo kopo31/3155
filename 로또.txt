@@ -17,11 +17,11 @@ void main() {
         }
     }
     for(int i = 0; i < 5; i++) { //오름차순정렬
-        for(int j = 0; j < 5 - i; j++) {
+        for(int j = 0; j < 5 - i; j++) { //이미 정렬된 항목을 제외하고 비교
             if(num[j] > num[j + 1]) {  // 값 교환
-                int temp = num[j];
-                num[j] = num[j + 1];
-                num[j + 1] = temp;
+                int temp = num[j]; // 값교환저장할장소
+                num[j] = num[j + 1]; // 현재 값을 다음 값으로 교환
+                num[j + 1] = temp; // 다음 값은 임시변수에 저장된 값으로 교환
             }
         }
     }
