@@ -9,13 +9,10 @@ void main()
     switch(b) 
     {
         case 10:
-            printf("A 등급");
-            printf("점수는 %.1f입니다.", a + (a * 0.1));
-            break;           
         case 9:
             printf("A 등급");
             printf("점수는 %.1f입니다.", a + (a * 0.1));
-            break;                      
+            break;                            
         case 8:
             printf("B 등급");
             printf("점수는 %.1f입니다.", a + (a * 0.05));
