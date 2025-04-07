@@ -18,6 +18,9 @@ void main()
     else if(a >= 5 && a <= 15){
         b = 4;
     }
+    else if(a >= 0 && a < 5 ){
+        b = 5;
+    }
 
     switch(b) 
     {
@@ -44,14 +47,11 @@ void main()
         case 5:
             printf("0도 이상 5도이하");
             printf("매우 춥습니다! 두꺼운 외투를 꼭 입으세요요."); 
-            
             break;
             
         default:
             printf("0도 미만");
             printf("한파 경고! 패딩과 장갑,모자를 착용하세요.");            
-            
     }
-    
     return 0;
 }
