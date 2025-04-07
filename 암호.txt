@@ -39,7 +39,6 @@ int main()
             break;                        
         default:
             printf("출력불가입니다.");            
-    }
-    
+    }    
     return 0;
 }
