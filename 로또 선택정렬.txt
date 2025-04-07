@@ -8,6 +8,7 @@ int main()
  int temp = 0;
  int num[6];
  srand(time(NULL)); 
+
    for (int i = 0; i < 6; i++) { //중복 여부 체크
      num[i] = (int)(rand() % 45) + 1; //1~45 사이 숫자 생성
      for(int j = 0; j < i; j++) {
