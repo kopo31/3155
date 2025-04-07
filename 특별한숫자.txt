@@ -8,7 +8,7 @@ int main()
   int d = c;
   scanf("%d", &a);
   
-  if(a <= 0 || a >= 1000) {
+  if(a <= 0 || a >= 999) {
       printf("특별한 숫자가 아닙니다.");
       return 0;
    }  
