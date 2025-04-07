@@ -7,22 +7,21 @@ void main()
     
     int b = (int)(a / 10);
     
-
     switch(b) 
     {
         case 10:
             printf("A 등급");
-            printf("점수는 %.1f입니다.", a+(a*0.1));
+            printf("점수는 %.1f입니다.", a+(a * 0.1));
             break;
             
         case 9:
             printf("A 등급");
-            printf("점수는 %.1f입니다.", a+(a*0.1));
+            printf("점수는 %.1f입니다.", a+(a * 0.1));
             break;           
             
         case 8:
             printf("B 등급");
-            printf("점수는 %.1f입니다.", a+(a*0.05));
+            printf("점수는 %.1f입니다.", a+(a * 0.05));
             break;
             
         case 7:
@@ -30,14 +29,11 @@ void main()
             break; 
             
         case 6:
-            printf("D 등급");
-            
+            printf("D 등급");            
             break;
             
         default:
-            printf("F 등급");
-            
-    }
-    
+            printf("F 등급");          
+    }    
     return 0;
 }
