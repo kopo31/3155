@@ -6,7 +6,7 @@ void main()
     int b = 0;
     scanf("%d", &a);
     
-    if(a >= 30){
+    if(a >= 30) {
         b = 1;
     }
     else if(a >= 25 && a <= 30) {
