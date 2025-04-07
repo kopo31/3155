@@ -12,26 +12,21 @@ void main()
         case 10:
             printf("A 등급");
             printf("점수는 %.1f입니다.", a + (a * 0.1));
-            break;
-            
+            break;           
         case 9:
             printf("A 등급");
             printf("점수는 %.1f입니다.", a + (a * 0.1));
-            break;           
-            
+            break;                      
         case 8:
             printf("B 등급");
             printf("점수는 %.1f입니다.", a + (a * 0.05));
-            break;
-            
+            break;            
         case 7:
             printf("C 등급");
-            break; 
-            
+            break;             
         case 6:
             printf("D 등급");            
-            break;
-            
+            break;            
         default:
             printf("F 등급");          
     }    
