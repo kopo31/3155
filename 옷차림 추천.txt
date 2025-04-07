@@ -18,7 +18,7 @@ void main()
     else if(a >= 5 && a <= 15) {
         b = 4;
     }
-    else if(a >= 0 && a < 5 ) {
+    else if(a >= 0 && a <= 5 ) {
         b = 5;
     }
 
