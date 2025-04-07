@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int M, N;
+
+    printf("M과 N을 입력하세요:\n");
+    scanf("%d %d", &M, &N);
+
+    for (int i = M; i <= N; i++) {
+        if (i % 7 == 0) 
+            continue; 
+        if (i % 10 == 7) 
+            continue; 
+        if (i % 5 == 0) {
+            printf("5의 배수입니다. %d\n", i);
+            break;  
+        }
+        printf("%d\n", i);
+    }
+
+    return 0;
+}
