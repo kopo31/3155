@@ -20,11 +20,11 @@ int main()
   if (a % 3 == 0 && a % 2 != 0) {
     printf("특별한 숫자");
   } else if ((b + c + d) % 7 == 0) {
-      printf("특별한 숫자");
+    printf("특별한 숫자");
   } else if (b > d) {
-      printf("특별한 숫자");
+    printf("특별한 숫자");
   } else {
-      printf("특별한 숫자가 아닙니다.");
+    printf("특별한 숫자가 아닙니다.");
   }
    return 0;
 }
