@@ -24,10 +24,10 @@ int main()
 
 int main()
 {
-    int a ;
-    int b ;
-    int c ;
-    int d ;
+    int a;
+    int b;
+    int c;
+    int d;
     int result = 0;
     
     printf("숫자를 입력하세요");
