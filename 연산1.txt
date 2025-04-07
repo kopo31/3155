@@ -27,9 +27,11 @@ int main()
     int b;
     int c;
     int d;
-    int result = 0;    
+    int result = 0;
+
     printf("숫자를 입력하세요");
-    scanf("%d", &a);    
+    scanf("%d", &a);
+
     b = a / 100;
     c = a % 100 / 10;
     d = a % 10 % 10;    
