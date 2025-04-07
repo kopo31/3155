@@ -9,47 +9,36 @@ int main()
     {
         case 1:
             printf("A");
-            break;
-            
+            break;            
         case 2:
             printf("B");
-            break;
-            
+            break;            
         case 3:
             printf("C");
-            break; 
-            
+            break;             
         case 4:
             printf("D");
-            break;
-            
+            break;            
         case 5:
             printf("E");
-            break;
-            
+            break;           
         case 6:
             printf("F");
-            break; 
-            
+            break;             
         case 7:
             printf("G");
-            break;   
-            
+            break;             
         case 8:
             printf("H");
-            break;   
-            
+            break;               
         case 9:
             printf("I");
-            break;
-            
+            break;           
         case 10:
             printf("J");
-            break;            
-            
+            break;                        
         default:
-            printf("출력불가입니다.");
-            
+            printf("출력불가입니다.");            
     }
     
     return 0;
