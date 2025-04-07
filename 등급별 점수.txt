@@ -3,10 +3,9 @@
 void main()
 {
     float a = 0;
-    scanf("%f", &a);
-    
+    scanf("%f", &a);    
     int b = (int)(a / 10);
-    
+
     switch(b) 
     {
         case 10:
