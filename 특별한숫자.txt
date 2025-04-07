@@ -9,10 +9,10 @@ int main()
 
   scanf("%d", &a);
   
-  if(a < 1 || a > 999) {
-      printf("특별한 숫자가 아닙니다.");
+  if(a <= 0 || a >= 1000) {
+      printf("유효범위가 아닙니다.");
       return 0;
-  } 
+  }
 
   b = a / 100;
   c = (a / 10) % 10;
@@ -30,4 +30,3 @@ int main()
 
    return 0;
 }
- 
