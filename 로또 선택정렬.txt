@@ -1,42 +1,40 @@
 #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 int main()
 {
  int temp = 0;
- int number[6];
- srand(time(NULL));
- 
+ int num[6];
+ srand(time(NULL)); 
    for (int i = 0; i < 6; i++) //중복 여부 체크
    {
-     number[i] = (int)(rand() % 45) + 1; //1~45 사이 숫자 생성
+     num[i] = (int)(rand() % 45) + 1; //1~45 사이 숫자 생성
      for(int j = 0; j < i; j++)
      {
-       if (number[i] == number[j]) //중복검사
+       if (num[i] == num[j]) //중복검사
        {
            i--; // 다시실행
+           break;
        }
      }
-     printf("%d ", number[i]);
-     sleep(1);
    }
    for (int i = 0 ; i < 6; i++) 
    {  
      for (int j = i +1 ; j < 6 ; j++)
      {
-       if (number[j] < number[i])
+       if (num[j] < num[i])
        {
-         temp = number[i];
-         number[i] = number[j];
-         number[j] = temp;
+         temp = num[i];
+         num[i] = num[j];
+         num[j] = temp;
        }
      }
    }
-
-   for (int i = 0 ; i < 6; i++) 
-   {
-        printf("%d ", number[i]);  
+   for (int k = 0; k < 6; k++) { //정렬된 번호 출력
+        printf("%d\n", num[k]); //번호 출력
+        sleep(1);
    }
-    return 0;
+   return 0;
 }
