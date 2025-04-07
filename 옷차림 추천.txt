@@ -46,8 +46,6 @@ void main()
         case 6:
             printf("0도 미만");
             printf("한파 경고! 패딩과 장갑,모자를 착용하세요.");
-        default:
-            printf("값이 이상합니다")
     }
 
     return 0;
