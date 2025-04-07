@@ -6,6 +6,7 @@ int main()
   int b = a;
   int c = b;
   int d = c;
+
   scanf("%d", &a);
   
   if(a <= 0 || a >= 999) {
@@ -26,6 +27,7 @@ int main()
   } else {
       printf("특별한 숫자가 아닙니다.");
   }
+
    return 0;
 }
  
