@@ -11,20 +11,21 @@ int main()
   if(a <= 0 || a >= 999) {
       printf("특별한 숫자가 아닙니다.");
       return 0;
-   }  
-   b = a / 100;
-   c = (a / 10) % 10;
-   d = a % 10 ;
+   } 
 
-   if (a % 3 == 0 && a % 2 != 0) {
+  b = a / 100;
+  c = (a / 10) % 10;
+  d = a % 10 ;
+
+  if (a % 3 == 0 && a % 2 != 0) {
+    printf("특별한 숫자");
+  }else if ((b + c + d) % 7 == 0) {
       printf("특별한 숫자");
-   }else if ((b + c + d) % 7 == 0) {
+  }else if (b > d) {
       printf("특별한 숫자");
-   }else if (b > d) {
-      printf("특별한 숫자");
-   }else{
+  }else{
       printf("특별한 숫자가 아닙니다.");
-   }
+  }
    return 0;
- }
+}
  
