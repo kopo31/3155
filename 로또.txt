@@ -7,7 +7,8 @@ void main() {
     srand(time(NULL));  // 랜덤 시드 설정
     
     for(int i = 0; i < 6; i++) { //6개 숫자 생성
-        num[i] = (rand() % 45) + 1;  // 1~45 사이의 랜덤 숫자 생성                
+        num[i] = (rand() % 45) + 1;  // 1~45 사이의 랜덤 숫자 생성
+
         for(int j = 0; j < i; j++) { // 중복 확인
             if(num[i] == num[j]) {
                 i--;  // 중복되면 다시 한 번 생성
@@ -15,6 +16,7 @@ void main() {
             }
         }
     }
+
     for(int i = 0; i < 5; i++) { //오름차순정렬
         for(int j = 0; j < 5 - i; j++) { //이미 정렬된 항목을 제외하고 비교
             if(num[j] > num[j + 1]) {  // 값 교환
@@ -24,9 +26,11 @@ void main() {
             }
         }
     }
+
     for (int k = 0; k < 6; k++) { //정렬된 번호 출력
         printf("%d\n", num[k]); //번호 출력
         sleep(1);
     }
+
     return 0;
 }
