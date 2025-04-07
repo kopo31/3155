@@ -11,7 +11,8 @@ int main()
     scanf("%d", &b);
     scanf("%d", &c);
 
-    if(c == 0) {
+    if(c == 0) 
+    {
         printf("c는 0이라 불가능요.\n");
     }   
     result = (a + b) * c - (a - b) / c;    
