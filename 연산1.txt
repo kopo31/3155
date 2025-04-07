@@ -33,7 +33,7 @@ int main()
     scanf("%d", &a);
     b = a / 100;
     c = a % 100 / 10;
-    d = a % 10    
+    d = a % 10;    
     result = b + c + d;  
     printf("자리 수의 합 : %d", result);    
     return 0;
