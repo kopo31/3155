@@ -9,16 +9,16 @@ void main()
     if(a >= 30){
         b = 1;
     }
-    else if(a >= 25 && a <= 30){
+    else if(a >= 25 && a <= 30) {
         b = 2;
     }
-    else if(a >= 15 && a <= 25){
+    else if(a >= 15 && a <= 25) {
         b = 3;
     }
-    else if(a >= 5 && a <= 15){
+    else if(a >= 5 && a <= 15) {
         b = 4;
     }
-    else if(a >= 0 && a < 5 ){
+    else if(a >= 0 && a < 5 ) {
         b = 5;
     }
 
