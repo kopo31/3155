@@ -12,7 +12,7 @@ void main() {
 
         for (int j = 0; j < i; j++) { 
             if(num[i] == num[j]) {
-                i--; // If duplicate, retry with the same index
+                i--;
                 break;
             }
         }
