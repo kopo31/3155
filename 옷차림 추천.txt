@@ -2,10 +2,10 @@
 
 void main()
 {
-    int a = 0;
+    float a = 0;
     int b = 0;
 
-    scanf("%d", &a);
+    scanf("%f", &a);
     
     if(a >= 30) {
         b = 1;
@@ -17,7 +17,7 @@ void main()
         b = 4;
     } else if(a >= 0) {
         b = 5;
-    } else {
+    } else if(a < 0) {
         b = 6;
     }
 
