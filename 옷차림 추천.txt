@@ -17,7 +17,7 @@ void main()
         b = 4;
     } else if(a >= 0) {
         b = 5;
-    } else {
+    } else if(a < 0) {
         b = 6;
     }
 
