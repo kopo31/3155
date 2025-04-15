@@ -38,18 +38,12 @@ void print_student(struct student s[], int d) {
 
 int main() {
     struct student a[3] = {
-        {"hong", 30, "M", "soccer"},
-        {"kim", 25, "M", "music"},
-        {"park", 20, "F", "movie"}
+        {"hong", 30, "M", "soccer"}, {"kim", 25, "M", "music"}, {"park", 20, "F", "movie"}
     };
-
     struct student students[1000];
-
     for (int i = 0; i < 3; i++) print_student(a, i);
-
     for (int j = 0; j < 1000; j++) {
         input_student(students, j);
-
         for (int i = 0; i < 3; i++) print_student(a, i);
         for (int k = 0; k <= j; k++) print_student(students, k + 3);
     }
