@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio.h>
 #include <time.h>
 
 int getDays(int year, int month) {
@@ -37,7 +38,7 @@ void printCalendar(int year, int month) {
     int start = getStartWeekday(year, month);
     int days = getDays(year, month);
 
-    printf("\n📅 %d년 %d월\n", year, month);
+    printf("\n%d%02d\n", year, month);
     printf(" s  m  t  w  t  f  s\n");
 
     for (int i = 0; i < start; i++) printf("   ");
