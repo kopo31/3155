@@ -9,10 +9,9 @@ int main()
    
    union num u;
    u.intVal = 100;
-   u.floatVal = 2.2;
-   u.charVal = 'A';
-   
    printf("%d %d\n", u.intVal, &u.intVal);
+   u.floatVal = 2.2;
    printf("%f %d\n", u.floatVal, &u.floatVal);
+   u.charVal = 'A';   
    printf("%c %d\n", u.charVal, &u.charVal);
 }
