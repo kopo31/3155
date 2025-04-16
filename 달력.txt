@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <time.h>
+
+int getDaysInMonth(int year, int month) {
+    int daysInMonth[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+        daysInMonth[2] = 29;
+    return daysInMonth[month];
+}
+
+int calculateStartDay(int year) {
+    return (year * 365 + (year - 1) / 4 - (year - 1) / 100 + (year - 1) / 400) % 7;
+}
+
+void calculateDday(int year, int month) {
+    time_t now;
+    struct tm currentTime;
+    time(&now);
+    currentTime = *localtime(&now);
+
+    struct tm userDate = {0};
+    userDate.tm_year = year - 1900;
+    userDate.tm_mon = month - 1;
+    userDate.tm_mday = 1;
+
+    time_t userTime = mktime(&userDate);
+    time_t currentTimeEpoch = mktime(&currentTime);
+    
+    double diff = difftime(userTime, currentTimeEpoch) / (60 * 60 * 24);
+    printf("D-Day: %.0f\n", diff);
+}
+
+void displayCalendar(int year, int month) {
+    int startDay = calculateStartDay(year);
+    printf("\n%d%02d\n", year, month);
+    printf(" s   m   t   w   t   f   s\n");
+
+    for (int i = 0; i < startDay; ++i)
+        printf("    ");
+    
+    for (int day = 1; day <= getDaysInMonth(year, month); ++day) {
+        printf("%2d", day);
+        if ((startDay + day) % 7 == 0)
+            printf("\n");
+        else
+            printf("  ");
+    }
+    printf("\n");
+}
+
+int main() {
+    int year, month;
+    printf("연도 입력: ");
+    scanf("%d", &year);
+    printf("월 입력: ");
+    scanf("%d", &month);
+
+    displayCalendar(year, month);
+    calculateDday(year, month);
+
+    return 0;
+}
